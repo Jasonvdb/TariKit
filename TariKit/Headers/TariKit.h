@@ -16,5 +16,4 @@ FOUNDATION_EXPORT const unsigned char TariKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <TariKit/PublicHeader.h>
 
-
-#import "wallet.h"
+#import <TariKit/wallet.h>

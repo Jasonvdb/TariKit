@@ -30,19 +30,9 @@ Wrapper classes for the Tari protocol.
     :tag => "#{s.version}"
   }
   s.source_files        = "TariKit/**/*.{h,m,a,swift}"
-  # s.public_header_files = "TariKit/**/*.h"
+  s.public_header_files = "TariKit/Headers/TariKit.h"
   s.ios.vendored_frameworks = 'TariKit.framework'
 
 
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'TariKit/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'TariKit' => ['TariKit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

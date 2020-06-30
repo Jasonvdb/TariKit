@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00B084FA24AA30F600F7B9BD /* wallet.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B084F924AA30F600F7B9BD /* wallet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00E766EC248F971C0081037D /* TariKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E766E2248F971B0081037D /* TariKit.framework */; };
 		00E766F1248F971C0081037D /* TariKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E766F0248F971C0081037D /* TariKitTests.swift */; };
 		00E766F3248F971C0081037D /* TariKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E766E5248F971B0081037D /* TariKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -18,7 +19,6 @@
 		00E76722248F99CD0081037D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E76721248F99CD0081037D /* Assets.xcassets */; };
 		00E76725248F99CD0081037D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E76723248F99CD0081037D /* LaunchScreen.storyboard */; };
 		00E7672C248F9ABA0081037D /* TariKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E766E2248F971B0081037D /* TariKit.framework */; };
-		00E76730248F9C730081037D /* wallet.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E7672E248F9C730081037D /* wallet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00E76736248F9EBB0081037D /* libtari_wallet_ffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E7672F248F9C730081037D /* libtari_wallet_ffi.a */; };
 		00E7673C248FA6250081037D /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7673B248FA6250081037D /* PrivateKey.swift */; };
 		00E7673D248FA6250081037D /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7673B248FA6250081037D /* PrivateKey.swift */; };
@@ -42,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00B084F924AA30F600F7B9BD /* wallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wallet.h; sourceTree = "<group>"; };
 		00E766E2248F971B0081037D /* TariKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TariKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E766E5248F971B0081037D /* TariKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TariKit.h; sourceTree = "<group>"; };
 		00E766E6248F971B0081037D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,7 +58,6 @@
 		00E76721248F99CD0081037D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00E76724248F99CD0081037D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00E76726248F99CD0081037D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E7672E248F9C730081037D /* wallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wallet.h; sourceTree = "<group>"; };
 		00E7672F248F9C730081037D /* libtari_wallet_ffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtari_wallet_ffi.a; sourceTree = "<group>"; };
 		00E7673B248FA6250081037D /* PrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
 		00E7673E248FA6540081037D /* ByteVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByteVector.swift; sourceTree = "<group>"; };
@@ -97,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00B084F824AA30F600F7B9BD /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				00E766E5248F971B0081037D /* TariKit.h */,
+				00B084F924AA30F600F7B9BD /* wallet.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
 		00E766D8248F971B0081037D = {
 			isa = PBXGroup;
 			children = (
@@ -121,10 +130,9 @@
 		00E766E4248F971B0081037D /* TariKit */ = {
 			isa = PBXGroup;
 			children = (
+				00B084F824AA30F600F7B9BD /* Headers */,
 				00E76739248FA5F50081037D /* Classes */,
 				00E766FC248F97510081037D /* Utils */,
-				00E766E5248F971B0081037D /* TariKit.h */,
-				00E7672E248F9C730081037D /* wallet.h */,
 				00E7672F248F9C730081037D /* libtari_wallet_ffi.a */,
 				00E766E6248F971B0081037D /* Info.plist */,
 			);
@@ -189,7 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E766F3248F971C0081037D /* TariKit.h in Headers */,
-				00E76730248F9C730081037D /* wallet.h in Headers */,
+				00B084FA24AA30F600F7B9BD /* wallet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -489,7 +497,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -504,7 +512,7 @@
 		00E766F7248F971C0081037D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -513,6 +521,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/TariKit/Headers";
 				INFOPLIST_FILE = TariKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -537,7 +546,7 @@
 		00E766F8248F971C0081037D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -546,6 +555,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/TariKit/Headers";
 				INFOPLIST_FILE = TariKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
